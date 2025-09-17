@@ -1,5 +1,5 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  #
+# /* ---- 💫 https://github.com/Crowdrocker 💫 ---- */  #
 
 clear
 wallpaper=$HOME/.config/hypr/wallpaper_effects/.wallpaper_current
@@ -41,11 +41,11 @@ if grep -iq '^\(ID_LIKE\|ID\)=.*\(debian\|ubuntu\)' /etc/os-release >/dev/null 2
 	printf "\n%.0s" {1..1}
     print_color $WARNING "
     █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
-                 KOOL DOTS version INCOMPATIBLE
+                 Snaps DOTS version INCOMPATIBLE
     █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
 
     Debian / Ubuntu detected. Refer to Hyprland-Dots README
-    For instruction on how to update your KooL Hyprland Dots
+    For instruction on how to update your Crowdrocker Hyprland Dots
 
     exiting ....
     "
@@ -56,15 +56,16 @@ fi
 
 printf "\n%.0s" {1..1}  
 echo -e "\e[35m
-    ╦╔═┌─┐┌─┐╦    ╔╦╗┌─┐┌┬┐┌─┐
-    ╠╩╗│ ││ │║     ║║│ │ │ └─┐ 2025
-    ╩ ╩└─┘└─┘╩═╝  ═╩╝└─┘ ┴ └─┘
+    ╦ ╦┌─┐┬ ┬┌┬┐┌┬┐┌─┐┌┬┐┌─┐┌┐┌┌─┐┌─┐┌─┐
+    ║║║├┤ ├─┤ │  │ ├─┤││││└─┐│││├─┤├─┘└─┐
+    ╚╩╝└─┘┴ ┴ ┴  ┴ ┴ ┴┴ ┴┴└─┘┘└┘┴ ┴┴  └─┘
+        release 2025
 \e[0m"
 printf "\n%.0s" {1..1}  
 
 ####### Announcement
 echo "${WARNING}A T T E N T I O N !${RESET}"
-echo "${MAGENTA}Kindly visit KooL Hyprland Own Wiki for changelogs${RESET}"
+echo "${MAGENTA}Kindly visit Crowdrocker Hyprland Own Wiki for changelogs${RESET}"
 printf "\n%.0s" {1..1}
 
 # Create Directory for Copy Logs
@@ -299,7 +300,7 @@ printf "\n"
 
 # Action to do for better appearance
 while true; do
-  echo "${NOTE} ${SKY_BLUE} By default, KooL's Dots are configured for 1440p or 2k."
+  echo "${NOTE} ${SKY_BLUE} By default, Crowdrocker's Dots are configured for 1440p or 2k."
   echo "${WARN} If you dont select proper resolution, Hyprlock will look FUNKY!"
   echo "${INFO} If you are not sure what is your resolution, choose 1 here!"
   echo "${MAGENTA}Select monitor resolution to properly configure appearance and fonts:"
@@ -352,7 +353,7 @@ printf "\n%.0s" {1..1}
 
 # Ask whether to change to 12hr format
 while true; do
-    echo -e "${NOTE} ${SKY_BLUE} By default, KooL's Dots are configured in 24H clock format."
+    echo -e "${NOTE} ${SKY_BLUE} By default, Crowdrocker's Dots are configured in 24H clock format."
     echo -n "$CAT Do you want to change to 12H (AM/PM) clock format? (y/n): "
     read answer
 
@@ -824,7 +825,7 @@ if [ -d "$BACKUP_DIR_PATH" ]; then
     If you decide to restore your old configs, make sure to
     handle the updates or changes manually !!!
     "
-	echo -e "${MAGENTA}Kindly Visit and check KooL's Hyprland-Dots GitHub page for the history of commits.${RESET}"
+	echo -e "${MAGENTA}Kindly Visit and check Crowdrocker's Hyprland-Dots GitHub page for the history of commits.${RESET}"
 
 
   for FILE_NAME in "${FILES_TO_RESTORE[@]}"; do
@@ -1022,7 +1023,7 @@ while true; do
   case $WALL in
     [Yy])
       echo "${NOTE} Downloading additional wallpapers..."
-      if git clone "https://github.com/JaKooLit/Wallpaper-Bank.git"; then
+      if git clone "https://github.com/Crowdrocker/Wallpaper-Bank.git"; then
           echo "${OK} Wallpapers downloaded successfully." 2>&1 | tee -a "$LOG"
 
           # Check if wallpapers directory exists and create it if not
@@ -1118,9 +1119,9 @@ printf "\n%.0s" {1..1}
 wallust run -s $wallpaper 2>&1 | tee -a "$LOG"
 
 printf "\n%.0s" {1..2}
-printf "${OK} GREAT! KooL's Hyprland-Dots is now Loaded & Ready !!! "
+printf "${OK} GREAT! Crowdrocker's Hyprland-Dots is now Loaded & Ready !!! "
 printf "\n%.0s" {1..1}
 printf "${INFO} However, it is ${MAGENTA}HIGHLY SUGGESTED${RESET} to logout and re-login or better reboot to avoid any issues"
 printf "\n%.0s" {1..1}
-printf "${SKY_BLUE}Thank you${RESET} for using ${MAGENTA}KooL's Hyprland Configuration${RESET}... ${YELLOW}ENJOY!!!${RESET}"
+printf "${SKY_BLUE}Thank you${RESET} for using ${MAGENTA}Crowdrocker's Hyprland Configuration${RESET}... ${YELLOW}ENJOY!!!${RESET}"
 printf "\n%.0s" {1..3}

@@ -1,5 +1,5 @@
 #!/bin/bash
-# https://github.com/JaKooLit
+# https://github.com/Crowdrocker
 
 # Script design to clone the Distro-Hyprland install scripts
 

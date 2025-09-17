@@ -1,5 +1,5 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  #
+# /* ---- 💫 https://github.com/Crowdrocker 💫  ---- */  #
 # for Semi-Manual upgrading your system.
 # NOTE: requires rsync 
 
@@ -21,14 +21,15 @@ RESET="$(tput sgr0)"
 
 printf "\n%.0s" {1..1}  
 echo -e "\e[35m
-    ╦╔═┌─┐┌─┐╦    ╔╦╗┌─┐┌┬┐┌─┐
-    ╠╩╗│ ││ │║     ║║│ │ │ └─┐ 2025
-    ╩ ╩└─┘└─┘╩═╝  ═╩╝└─┘ ┴ └─┘ upgrade.sh
+╦ ╦┌─┐┬ ┬┌┬┐┌┬┐┌─┐┌┬┐┌─┐┌┐┌┌─┐┌─┐┌─┐
+║║║├┤ ├─┤ │  │ ├─┤││││└─┐│││├─┤├─┘└─┐
+╚╩╝└─┘┴ ┴ ┴  ┴ ┴ ┴┴ ┴┴└─┘┘└┘┴ ┴┴  └─┘
+    upgrade.sh
 \e[0m"
 printf "\n%.0s" {1..1}  
 
 echo "${WARNING}A T T E N T I O N !${RESET}"
-echo "${SKY_BLUE}This script is meant to manually upgrade your KooL Hyprland Dots${RESET}"
+echo "${SKY_BLUE}This script is meant to manually upgrade your Crowdrocker Snaps-Dots${RESET}"
 echo "${YELLOW}NOTE that you should edit this script and assign an Directory or Files exclusion${RESET}"
 printf "\n%.0s" {1..1}
 echo "${MAGENTA}If you are not sure what you are doing,ran the ${SKY_BLUE}copy.sh${RESET} ${MAGENTA}instead${RESET}"
@@ -176,7 +177,7 @@ if version_gt "$latest_version" "$stored_version"; then
         echo "$MAGENTA Upgrade declined. No files or directories changed" 2>&1 | tee -a "$LOG"
     fi
 else
-    echo "$OK 👌 No upgrade found. The installed version ${MAGENTA}($stored_version)${RESET} is up to date with the KooL Hyprland-Dots version ${YELLOW}($latest_version)${RESET}" 2>&1 | tee -a "$LOG"
+    echo "$OK 👌 No upgrade found. The installed version ${MAGENTA}($stored_version)${RESET} is up to date with the Crowdrocker Snaps-Dots version ${YELLOW}($latest_version)${RESET}" 2>&1 | tee -a "$LOG"
 fi
 
 printf "\n%.0s" {1..3}
